@@ -12,6 +12,18 @@ export default {
         blue: "#0088CD",
         darkPurple:"#231834",
         gray: "#6C83A2"
+      },
+      keyframes: {
+        dropdownAnimation: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 10 },
+        },
+       
+      },
+      animation: {
+        dropdown: "dropdownAnimation 0.5s linear forwards",
+       
+       
       }
     },
   },
