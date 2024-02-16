@@ -7,6 +7,7 @@ import OurMission from "./Pages/AboutUs/OurMission"
 import OurFacilities from "./Pages/AboutUs/OurFacilities"
 import OurStrength from "./Pages/AboutUs/OurStrength"
 import OurTeam from "./Pages/AboutUs/OurTeam"
+import AdmissionForm from "./Pages/AdmissionForm/AdmissionForm"
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
             <Route path="/our-facilities" element={<OurFacilities />} />
             <Route path="/our-strength" element={<OurStrength />} />
             <Route path="/our-team" element={<OurTeam />} />
+            <Route path="/admission-form" element={<AdmissionForm />} />
         </Routes>
         <Footer />
       </BrowserRouter>

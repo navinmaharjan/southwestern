@@ -88,7 +88,9 @@ const Header = () => {
                   </nav>
                 )}
               </li>
+              <Link to="/admission-form">
               <li className="py-4 px-1">Admission Form</li>
+              </Link>
               <li
                 className="py-4 px-1 relative flex justify-center items-center gap-1"
                 onMouseEnter={() => setAdmission(true)}
