@@ -89,7 +89,7 @@ const Header = () => {
                 )}
               </li>
               <Link to="/admission-form">
-              <li className="py-4 px-1">Admission Form</li>
+                <li className="py-4 px-1">Admission Form</li>
               </Link>
               <li
                 className="py-4 px-1 relative flex justify-center items-center gap-1"
@@ -104,18 +104,25 @@ const Header = () => {
                     )}`}
                   >
                     <ul className="flex flex-col text-darkPurple">
-                      <li className="p-4 font-medium hover:bg-blue hover:bg-opacity-10 border-t border-gray border-opacity-25">
-                        Admission Policy
-                      </li>
-                      <li className="p-4 font-medium hover:bg-blue hover:bg-opacity-10 border-t border-gray border-opacity-25">
-                        Fee Structure
-                      </li>
+                      <Link to="/admission-policy">
+                        <li className="p-4 font-medium hover:bg-blue hover:bg-opacity-10 border-t border-gray border-opacity-25">
+                          Admission Policy
+                        </li>
+                      </Link>
+                      <Link to="/fee-structure">
+                        <li className="p-4 font-medium hover:bg-blue hover:bg-opacity-10 border-t border-gray border-opacity-25">
+                          Fee Structure
+                        </li>
+                      </Link>
+
                       <li className="p-4 font-medium hover:bg-blue hover:bg-opacity-10 border-t border-gray border-opacity-25">
                         Scholarship Program
                       </li>
-                      <li className="p-4 font-medium hover:bg-blue hover:bg-opacity-10 border-t border-gray border-opacity-25">
-                        FAQs
-                      </li>
+                      <Link to="/faq">
+                        <li className="p-4 font-medium hover:bg-blue hover:bg-opacity-10 border-t border-gray border-opacity-25">
+                          FAQs
+                        </li>
+                      </Link>
                     </ul>
                   </nav>
                 )}

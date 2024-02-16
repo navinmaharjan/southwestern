@@ -8,6 +8,9 @@ import OurFacilities from "./Pages/AboutUs/OurFacilities"
 import OurStrength from "./Pages/AboutUs/OurStrength"
 import OurTeam from "./Pages/AboutUs/OurTeam"
 import AdmissionForm from "./Pages/AdmissionForm/AdmissionForm"
+import AdmissionPolicy from "./Pages/Admissions/AdmissionPolicy"
+import FeeStructure from "./Pages/Admissions/FeeStructure"
+import Faq from "./Pages/Admissions/Faq"
 
 const App = () => {
   return (
@@ -22,6 +25,10 @@ const App = () => {
             <Route path="/our-strength" element={<OurStrength />} />
             <Route path="/our-team" element={<OurTeam />} />
             <Route path="/admission-form" element={<AdmissionForm />} />
+            <Route path="/admission-policy" element={<AdmissionPolicy />} />
+            <Route path="/fee-structure" element={<FeeStructure />} />
+            <Route path="/faq" element={<Faq />} />
+            
         </Routes>
         <Footer />
       </BrowserRouter>
