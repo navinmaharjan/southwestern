@@ -141,15 +141,22 @@ const Header = () => {
                     )}`}
                   >
                     <ul className="flex flex-col text-darkPurple">
+                      <Link to="/games-sports">
                       <li className="p-4 font-medium hover:bg-blue hover:bg-opacity-10 border-t border-gray border-opacity-25">
                         Games & Sports
                       </li>
+                      </Link>
+                      <Link to="/annual-function">
                       <li className="p-4 font-medium hover:bg-blue hover:bg-opacity-10 border-t border-gray border-opacity-25">
                         Annual Function
                       </li>
+                      </Link>
+                      <Link to="/parents-day">
                       <li className="p-4 font-medium hover:bg-blue hover:bg-opacity-10 border-t border-gray border-opacity-25">
                         Parents Day
                       </li>
+                      </Link>
+                    
                       <li className="p-4 font-medium hover:bg-blue hover:bg-opacity-10 border-t border-gray border-opacity-25">
                         CCA
                       </li>

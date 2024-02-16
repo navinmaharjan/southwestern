@@ -11,7 +11,9 @@ import AdmissionForm from "./Pages/AdmissionForm/AdmissionForm"
 import AdmissionPolicy from "./Pages/Admissions/AdmissionPolicy"
 import FeeStructure from "./Pages/Admissions/FeeStructure"
 import Faq from "./Pages/Admissions/Faq"
-
+import GamesSports from "./Pages/Activities/GamesSports"
+import AnnualFunction from "./Pages/Activities/AnnualFunction"
+import ParentsDay from "./Pages/Activities/ParentsDay"
 const App = () => {
   return (
     <>
@@ -28,7 +30,9 @@ const App = () => {
             <Route path="/admission-policy" element={<AdmissionPolicy />} />
             <Route path="/fee-structure" element={<FeeStructure />} />
             <Route path="/faq" element={<Faq />} />
-            
+            <Route path="/games-sports" element={<GamesSports />} />
+            <Route path="/annual-function" element={<AnnualFunction />} />
+            <Route path="/parents-day" element={<ParentsDay />} />
         </Routes>
         <Footer />
       </BrowserRouter>
