@@ -4,6 +4,7 @@ import InspirationalMessages from './InspirationalMessasges'
 import Introduction from './Introduction'
 import LifeAt from './LifeAt'
 import Quote from './Quote'
+import Testimonials from './Testimonial'
 import WhySouthwestern from './WhySouthwetern'
 
 const Home = () => {
@@ -16,7 +17,7 @@ const Home = () => {
         <InspirationalMessages />
         <LifeAt />
         <BoardOfDirectors />
-        
+        <Testimonials />
     </>
   )
 }
