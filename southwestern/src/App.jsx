@@ -20,6 +20,11 @@ import NoticeEvents from "./Pages/NoticeEvents/NoticeEvents"
 import Career from "./Pages/Career/Career"
 import ContactUs from "./Pages/ContactUs/ContactUs"
 import Gallery from "./Pages/Gallery/Gallery"
+import PrePrimary from "./Pages/Academics/PrePrimary"
+import Primary from "./Pages/Academics/Primary"
+import LowerSecondary from "./Pages/Academics/LowerSecondary"
+import Secondary from "./Pages/Academics/Secondary"
+
 const App = () => {
   return (
     <>
@@ -45,6 +50,10 @@ const App = () => {
             <Route path="/career" element={<Career />} />
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/pre-primary" element={<PrePrimary />} />
+            <Route path="/primary" element={<Primary />} />
+            <Route path="/lower-secondary" element={<LowerSecondary />} />
+            <Route path="/secondary" element={<Secondary />} />
         </Routes>
         <Footer />
       </BrowserRouter>

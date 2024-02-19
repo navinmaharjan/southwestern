@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import BannerImage from "../../assets/banner/9.jpeg";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -13,10 +14,20 @@ const AdmissionPolicy = () => {
           className="absolute w-full h-full object-cover"
         />
 
-        <div className="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2  text-4xl font-bold text-white z-10">
-          <h3>Contact Us</h3>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  text-4xl font-bold text-white z-10">
+          <div className="flex flex-col items-center">
+            <h3>Contact Us</h3>
+            <div className="flex justify-center text-sm font-light">
+              <Link to="/">
+                <p className="hover:text-darkOrange">Home</p>
+              </Link>
+              <p>/</p>
+
+              <p className="text-darkOrange">Contact Us</p>
+            </div>
+          </div>
         </div>
-        <div className="bg-orange opacity-60 w-1/5 h-20 absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2  text-7xl font-bold text-white"></div>
+        {/* <div className="bg-orange opacity-60 w-1/5 h-20 absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2  text-7xl font-bold text-white"></div> */}
       </div>
 
       <div className="container mx-auto py-16">
@@ -49,16 +60,30 @@ const AdmissionPolicy = () => {
                 Drop Us A Message
               </h3>
               <form className="flex flex-col gap-2">
-                <input type="text" placeholder="Full Name" className="p-2 placeholder:text-sm" />
-                <input type="email" placeholder="Email Address" className="p-2 placeholder:text-sm" />
-                <input type="text-area" placeholder="Your Message" className="p-2 placeholder:text-sm" />
-                <button type="submit" className="bg-blue p-2 text-white">Send</button>
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  className="p-2 placeholder:text-sm"
+                />
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  className="p-2 placeholder:text-sm"
+                />
+                <input
+                  type="text-area"
+                  placeholder="Your Message"
+                  className="p-2 placeholder:text-sm"
+                />
+                <button type="submit" className="bg-blue p-2 text-white">
+                  Send
+                </button>
               </form>
             </div>
           </div>
           <div className="w-1/2 p-8">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.6140588480694!2d85.3117201!3d27.6983209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb185370dd790f%3A0x11607ddc8072d68!2sAdvance%20Money%20Transfer%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1701168510216!5m2!1sen!2snp"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.288472148348!2d85.32247367631062!3d27.73924707616439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb194353e92535%3A0x16ac466d4804b3f0!2ssouthwestern%20school!5e0!3m2!1sen!2snp!4v1708336579455!5m2!1sen!2snp"
               referrerpolicy="no-referrer-when-downgrade"
               className="w-full h-96"
             ></iframe>

@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-
 import Logo from "../assets/logo/logo.png";
 import Logo2 from "../assets/logo/logo2.jpeg";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   const currentDate = new Date();
@@ -69,6 +72,24 @@ const Footer = () => {
                     info@southwestern.com.np
                   </h3>
                 </div>
+              </div>
+
+              <h3 className="text-darkOrange text-xl  tracking-wider  font-medium">
+                Follow us on:
+              </h3>
+              <div className="flex gap-4">
+                <Link to="https://facebook.com" target="_blank">
+                  <FaFacebook className="hover:text-darkOrange cursor-pointer transitio duration-300 text-white" />
+                </Link>
+                <Link to="https://twitter.com" target="_blank">
+                  <FaTwitter className="hover:text-darkOrange cursor-pointer transitio duration-300 text-white" />
+                </Link>
+                <Link
+                  to="https://www.youtube.com/@southwesternschoolkathmand1783"
+                  target="_blank"
+                >
+                  <FaYoutube className="hover:text-darkOrange cursor-pointer transitio duration-300 text-white" />
+                </Link>
               </div>
             </div>
 
