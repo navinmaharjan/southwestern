@@ -11,7 +11,8 @@ export default {
         darkOrange: "#FF8700",
         blue: "#0088CD",
         darkPurple:"#231834",
-        gray: "#6C83A2"
+        gray: "#6C83A2",
+        offWhite: '#FAFAFA'
       },
       keyframes: {
         dropdownAnimation: {

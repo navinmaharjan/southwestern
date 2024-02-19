@@ -11,233 +11,381 @@ const AdmissionForm = () => {
         />
 
         <div className="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2  text-4xl font-bold text-white z-10">
-          <h3>Admission Form</h3>
+          <h3>Online Admission Form</h3>
         </div>
-        <div className="bg-orange opacity-80 w-1/5 h-20 absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2  text-7xl font-bold text-white"></div>
+        {/* <div className="bg-orange opacity-80 w-1/5 h-20 absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2  text-7xl font-bold text-white"></div> */}
       </div>
 
       <div className="container mx-auto py-16">
-        <form className="mx-[100px] bg-gray  bg-opacity-10 p-10">
-          <h3 className="font-semibold py-2 bg-gray text-center text-white uppercase tracking-wider mb-2">
-            Student's Details
+        <form className="mx-[100px] p-10">
+          <h3 className="text-slate-700 font-semibold">
+            Student's Name (IN BLOCK LETTERS)
           </h3>
-          <div className="flex justify-between mb-4">
-            <div className="flex gap-2 items-center">
-              <h3>Admission sought to class:</h3>
-              <input type="text" className="h-8 focus:outline-none" />
-            </div>
-            <div className="flex gap-4 items-center">
-              <h3>Sex:</h3>
-              <div className="flex">
-                <input type="checkbox" />
-                <h3>Male</h3>
-              </div>
-              <div className="flex">
-                <input type="checkbox" />
-                <h3>Female</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex justify-between mb-4">
-            <div className="flex gap-4 items-center">
-              <h3>Name: </h3>
+          <div className="flex justify-between mt-2">
+            <div className="flex flex-col">
+              <p className="text-sm">First Name</p>
               <input
                 type="text"
-                placeholder="First Name"
-                className=" focus:outline-none placeholder:text-sm h-8 w-96"
+                className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
               />
+            </div>
+            <div className="flex flex-col">
+              <p className="text-sm">Middle Name</p>
               <input
                 type="text"
-                placeholder="Middle Name"
-                className=" focus:outline-none placeholder:text-sm h-8 w-96"
+                className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
               />
+            </div>
+            <div className="flex flex-col">
+              <p className="text-sm">Last Name</p>
               <input
                 type="text"
-                placeholder="Last Name"
-                className=" focus:outline-none placeholder:text-sm h-8 w-96"
+                className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
               />
             </div>
           </div>
 
-          <div className="flex justify-between mb-4">
-            <div className="flex gap-2 items-center">
-              <h3>Date of birth: </h3>
+          <h3 className="text-slate-700 font-semibold mt-4">Date of Birth</h3>
+          <div className="flex gap-[52px] mt-2 items-center">
+            <div className="flex flex-col">
+              <p className="text-sm">Date of Birth</p>
               <input
                 type="date"
-                placeholder="First Name"
-                className=" focus:outline-none placeholder:text-sm h-8 w-96"
+                className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
               />
             </div>
-            <div className="flex gap-2 items-center">
-              <h3>Place of birth</h3>
+            <div className="flex flex-col">
+              <p className="text-sm">Gender</p>
+              <div className="flex gap-4">
+                <div className="flex gap-2">
+                  <input
+                    type="radio"
+                    name="gender"
+                    className="bg-offWhite border border-gray border-opacity-20 w-4 p-1 focus:outline-none rounded-md"
+                  />
+                  <p>Male</p>
+                </div>
+                <div className="flex gap-2">
+                  <input
+                    type="radio"
+                    name="gender"
+                    className="bg-offWhite border border-gray border-opacity-20 w-4 p-1 focus:outline-none rounded-md"
+                  />
+                  <p>Female</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex justify-between mt-8">
+            <div className="flex flex-col">
+              <p className="text-sm">Address</p>
               <input
                 type="text"
-                className=" focus:outline-none placeholder:text-sm h-8 w-96"
+                className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
+              />
+            </div>
+            <div className="flex flex-col">
+              <p className="text-sm">Admission For Grade</p>
+              <select
+                name="gradeAdmission"
+                id="gradeAdmission"
+                className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
+              >
+                <option value="none" className="text-sm">
+                  Select Class
+                </option>
+                <option value="pre nursery" className="text-sm">
+                  Pre Nursery
+                </option>
+                <option value="nursery" className="text-sm">
+                  Nursery
+                </option>
+                <option value="lkg" className="text-sm">
+                  LKG
+                </option>
+                <option value="ukg" className="text-sm">
+                  UKG
+                </option>
+                <option value="1" className="text-sm">
+                  1 (One)
+                </option>
+                <option value="2" className="text-sm">
+                  2 (Two)
+                </option>
+                <option value="3" className="text-sm">
+                  3 (Three)
+                </option>
+                <option value="4" className="text-sm">
+                  4 (Four)
+                </option>
+                <option value="5" className="text-sm">
+                  5 (Five)
+                </option>
+                <option value="6" className="text-sm">
+                  6 (Six)
+                </option>
+                <option value="7" className="text-sm">
+                  7 (Seven)
+                </option>
+                <option value="8" className="text-sm">
+                  8 (Eight)
+                </option>
+                <option value="9" className="text-sm">
+                  9 (Nine)
+                </option>
+                <option value="10" className="text-sm">
+                  10 (Ten)
+                </option>
+                <option value="11" className="text-sm">
+                  11 (Eleven)
+                </option>
+                <option value="12" className="text-sm">
+                  12 (Twelve)
+                </option>
+                <option value="bachelor" className="text-sm">
+                  Bachelor
+                </option>
+              </select>
+              {/* <input
+                type="text"
+                className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
+              /> */}
+            </div>
+            <div className="flex flex-col">
+              <p className="text-sm">Name of the school last attended Name</p>
+              <input
+                type="text"
+                className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
               />
             </div>
           </div>
 
-          <div className="flex justify-between mb-4">
-            <div className="flex gap-2 items-center">
-              <h3>Address: </h3>
-              <input
-                type="text"
-                placeholder="Address"
-                className=" focus:outline-none placeholder:text-sm h-8 w-96"
-              />
+          <div className="flex gap-[54px] mt-8">
+            <div className=" flex flex-col gap-2">
+              <p className="text-slate-700 font-semibold">
+                Father's Information
+              </p>
+              <div className="flex flex-col">
+                <p className="text-sm">Full Name</p>
+                <input
+                  type="text"
+                  className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
+                />
+              </div>
+              <div className="flex flex-col">
+                <p className="text-sm">Mobile Number</p>
+                <input
+                  type="text"
+                  className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
+                />
+              </div>
+              <div className="flex flex-col">
+                <p className="text-sm">Office Name</p>
+                <input
+                  type="text"
+                  className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
+                />
+              </div>
+              <div className="flex flex-col">
+                <p className="text-sm">Phone Number(Office)</p>
+                <input
+                  type="text"
+                  className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
+                />
+              </div>
+              <div className="flex flex-col">
+                <p className="text-sm">Email</p>
+                <input
+                  type="text"
+                  className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
+                />
+              </div>
+              <div className="flex flex-col">
+                <p className="text-sm">Occupation</p>
+                <input
+                  type="text"
+                  className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
+                />
+              </div>
+            </div>
+            <div className=" flex flex-col gap-2">
+              <p className="text-slate-700 font-semibold">
+                Mother's Information
+              </p>
+              <div className="flex flex-col">
+                <p className="text-sm">Full Name</p>
+                <input
+                  type="text"
+                  className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
+                />
+              </div>
+              <div className="flex flex-col">
+                <p className="text-sm">Mobile Number</p>
+                <input
+                  type="text"
+                  className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
+                />
+              </div>
+              <div className="flex flex-col">
+                <p className="text-sm">Office Name</p>
+                <input
+                  type="text"
+                  className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
+                />
+              </div>
+              <div className="flex flex-col">
+                <p className="text-sm">Phone Number(Office)</p>
+                <input
+                  type="text"
+                  className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
+                />
+              </div>
+              <div className="flex flex-col">
+                <p className="text-sm">Email</p>
+                <input
+                  type="text"
+                  className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
+                />
+              </div>
+              <div className="flex flex-col">
+                <p className="text-sm">Occupation</p>
+                <input
+                  type="text"
+                  className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
+                />
+              </div>
             </div>
           </div>
 
-          <div className="flex justify-between mb-4">
-            <div className="flex gap-2 items-center">
-              <h3>Mother Tongue: </h3>
-              <input
-                type="text"
-                className=" focus:outline-none placeholder:text-sm h-8 w-96"
-              />
-            </div>
-            <div className="flex gap-2 items-center">
-              <h3>Language Spoken At Home: </h3>
-              <input
-                type="text"
-                className=" focus:outline-none placeholder:text-sm h-8 w-96"
-              />
-            </div>
-          </div>
-
-          <h3 className="pt-5 font-semibold">Medical Information</h3>
-          <div className="flex justify-between mb-4">
-            <div className="flex gap-2 items-center">
-              <h3>Blood Group: </h3>
-              <input
-                type="text"
-                className=" focus:outline-none placeholder:text-sm h-8 w-96"
-              />
-            </div>
-            <div className="flex gap-2 items-center">
-              <h3>Allergies: </h3>
-              <input
-                type="text"
-                className=" focus:outline-none placeholder:text-sm h-8 w-96"
-              />
-            </div>
-          </div>
-
-          <div className="flex justify-between mb-4">
-            <div className="flex gap-2 items-center">
-              <h3>Physical Disability: </h3>
-              <input
-                type="text"
-                className=" focus:outline-none placeholder:text-sm h-8 w-96"
-              />
-            </div>
-            <div className="flex gap-2 items-center">
-              <h3>Any Other Health Problems:</h3>
-              <input
-                type="text"
-                className=" focus:outline-none placeholder:text-sm h-8 w-96"
-              />
-            </div>
-          </div>
-
-          <h3 className="pt-5 font-semibold">
-            School History (Most recent school first)
+          <h3 className="text-slate-700 font-semibold mt-8">
+            Local Guardian/Contact Person
           </h3>
-          <div className="grid grid-cols-4 gap-2">
-            <div className="flex flex-col gap-2 ">
-              <p>S.no</p>
-              <input type="text" className="h-8" />
-              <input type="text" className="h-8" />
+          <div className="flex justify-between mt-4">
+            <div className="flex flex-col">
+              <p className="text-sm">Full Name</p>
+              <input
+                type="text"
+                className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
+              />
             </div>
-            <div className="flex flex-col gap-2 ">
-              <p>School</p>
-              <input type="text" className="h-8" />
-              <input type="text" className="h-8" />
+            <div className="flex flex-col">
+              <p className="text-sm">Relation</p>
+              <input
+                type="text"
+                className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
+              />
             </div>
-            <div className="flex flex-col gap-2 ">
-              <p>Class</p>
-              <input type="text" className="h-8" />
-              <input type="text" className="h-8" />
+            <div className="flex flex-col">
+              <p className="text-sm">Mobile No.</p>
+              <input
+                type="text"
+                className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
+              />
             </div>
-            <div className="flex flex-col gap-2 ">
-              <p>Duration(Year)</p>
-              <input type="text" className="h-8" />
-              <input type="text" className="h-8" />
+          </div>
+          <div className="flex justify-between mt-4">
+            <div className="flex flex-col">
+              <p className="text-sm">Phone Number(Office)</p>
+              <input
+                type="text"
+                className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
+              />
+            </div>
+            <div className="flex flex-col">
+              <p className="text-sm">Email</p>
+              <input
+                type="text"
+                className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
+              />
+            </div>
+            <div className="flex flex-col">
+              <p className="text-sm">Occupation</p>
+              <input
+                type="text"
+                className="bg-offWhite border border-gray border-opacity-20 w-96 p-1 focus:outline-none rounded-md"
+              />
             </div>
           </div>
 
-          <h3 className="pt-5 font-semibold">Club Activities</h3>
-          <div className="flex gap-4 items-center">
-            <div className="flex items-center gap-2">
-              <input type="checkbox" />
-              <p>Football</p>
-            </div>
-            <div className="flex items-center gap-2">
-              <input type="checkbox" />
-              <p>Basketball</p>
-            </div>
-            <div className="flex items-center gap-2">
-              <input type="checkbox" />
-              <p>Cricket</p>
-            </div>
-            <div className="flex items-center gap-2">
-              <input type="checkbox" />
-              <p>Dance</p>
-            </div>
-            <div className="flex items-center gap-2">
-              <input type="checkbox" />
-              <p>Music</p>
-            </div>
-            <div className="flex items-center gap-2">
-              <input type="checkbox" />
-              <p>Public Speaking</p>
-            </div>
-            <div className="flex items-center gap-2">
-              <input type="checkbox" />
-              <p>Drama</p>
-            </div>
-            <div className="flex items-center gap-2">
-              <input type="checkbox" />
-              <p>Art & Craft</p>
-            </div>
-            <div className="flex items-center gap-2">
-              <input type="checkbox" />
-              <p>Karate/Taekwando/Wushu</p>
-            </div>
-          </div>
-
-          <h3 className="font-semibold py-2 bg-gray text-center text-white uppercase tracking-wider my-2">
-            Parent's Details
+          <h3 className="text-slate-700 font-semibold mt-8">
+            Please tick (✓) the appropriate box if the student needs any/all the
+            following services (optional).
           </h3>
-          <div className="flex justify-between items-center">
-            <div className="flex gap-2 items-center">
-              <h3>Father</h3>
-              <input type="text" placeholder="Father's Name" className="w-80 h-8" />
+          <div className="flex gap-16 mt-4">
+            <div className="flex gap-4">
+              <p className="text-slate-700 font-semibold">Hostel</p>
+              <div className="flex gap-2">
+                <div className="flex gap-1">
+                  <input type="radio" name="hostel" />
+                  <p>Yes</p>
+                </div>
+                <div className="flex gap-1">
+                  <input type="radio" name="hostel" />
+                  <p>No</p>
+                </div>
+              </div>
             </div>
-            <div className="flex items-center">
-              <h3>Academic Qualification</h3>
-              <input type="text" placeholder="Father's Name" className="w-80 h-8" />
+            <div className="flex gap-4">
+              <p className="text-slate-700 font-semibold">Bus</p>
+              <div className="flex gap-2">
+                <div className="flex gap-1">
+                  <input type="radio" name="bus" />
+                  <p>Yes</p>
+                </div>
+                <div className="flex gap-1">
+                  <input type="radio" name="bus" />
+                  <p>No</p>
+                </div>
+              </div>
             </div>
-            <div className="flex gap-2 items-center">
-              <h3>Occupation</h3>
-              <input type="text" placeholder="Father's Name" className="w-80 h-8" />
+            <div className="flex gap-4">
+              <p className="text-slate-700 font-semibold">
+                Lunch (Day Scholar)
+              </p>
+              <div className="flex gap-2">
+                <div className="flex gap-1">
+                  <input type="radio" name="lunch" />
+                  <p>Yes</p>
+                </div>
+                <div className="flex gap-1">
+                  <input type="radio" name="lunch" />
+                  <p>No</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="flex justify-between items-center">
-            <div className="flex gap-2 items-center">
-              <h3>Mother</h3>
-              <input type="text" placeholder="Mother's Name" className="w-80 h-8" />
-            </div>
-            <div className="flex items-center">
-              <h3>Academic Qualification</h3>
-              <input type="text" placeholder="Father's Name" className="w-80 h-8" />
-            </div>
-            <div className="flex gap-2 items-center">
-              <h3>Occupation</h3>
-              <input type="text" placeholder="Father's Name" className="w-80 h-8" />
-            </div>
+
+          <h3 className="text-slate-700 font-semibold mt-16">
+            Any particular disease(s)/illness(es) student is suffering from? If
+            yes, please give details.
+          </h3>
+          <input
+            type="text"
+            className="bg-offWhite border border-gray border-opacity-20 w-full p-1 focus:outline-none rounded-md mt-4"
+          />
+
+          <h3 className="text-slate-700 font-semibold mt-16">
+            Does the student have any allergy? Is he/she under any medication?
+            If yes, please give details.
+          </h3>
+          <input
+            type="text"
+            className="bg-offWhite border border-gray border-opacity-20 w-full p-1 focus:outline-none rounded-md mt-4"
+          />
+
+          <h3 className="text-slate-700 font-semibold mt-16">
+            By checking the checkbox below you have confirmed the eligibility
+            criteria to apply and you are ready for further application process.
+          </h3>
+          <div className="flex gap-1 mt-4">
+            <input type="checkbox" />
+            <p>I Agree</p>
           </div>
+
+          <button className="bg-blue text-white w-full p-2 mt-8 hover:opacity-85">
+            Submit
+          </button>
         </form>
       </div>
     </>
