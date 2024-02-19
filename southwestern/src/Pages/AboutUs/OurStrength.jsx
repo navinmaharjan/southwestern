@@ -1,5 +1,5 @@
 import StrengthData from "../../Data/StrengthData";
-import BannerImage from "../../assets/banner/6.jpeg";
+import BannerImage from "../../assets/banner/9.jpeg";
 
 const Strength = () => {
   return (

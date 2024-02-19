@@ -1,10 +1,10 @@
 import IntroductionDetail from "../../Data/IntroductionDetail";
-import BannerImage from "../../assets/banner/7.jpg"
+import BannerImage from "../../assets/banner/9.jpeg"
 
 const Introduction = () => {
   return (
     <>
-      <div className="relative w-full h-96">
+      <div className="relative w-full h-48">
         <img src={BannerImage} alt="banner Image"  className="absolute w-full h-full object-cover" />
       
         <div className="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2  text-4xl font-bold text-white z-10">

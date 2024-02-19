@@ -1,10 +1,10 @@
 import missionData from "../../Data/OurMissionDetail";
-import BannerImage from "../../assets/banner/8.jpg";
+import BannerImage from "../../assets/banner/9.jpeg";
 
 const Mission = () => {
   return (
     <>
-      <div className="relative w-full h-96">
+      <div className="relative w-full h-48">
         <img
           src={BannerImage}
           alt="banner image"

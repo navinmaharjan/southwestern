@@ -1,9 +1,9 @@
-import BannerImage from "../../assets/banner/5.jpeg";
+import BannerImage from "../../assets/banner/9.jpeg";
 
 const AdmissionForm = () => {
   return (
     <>
-      <div className="relative w-full h-80">
+      <div className="relative w-full h-48">
         <img
           src={BannerImage}
           alt="banner Image"

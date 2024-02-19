@@ -14,6 +14,12 @@ import Faq from "./Pages/Admissions/Faq"
 import GamesSports from "./Pages/Activities/GamesSports"
 import AnnualFunction from "./Pages/Activities/AnnualFunction"
 import ParentsDay from "./Pages/Activities/ParentsDay"
+import CCA from "./Pages/Activities/CCA"
+import AwardAchievement from "./Pages/Activities/AwardAchievement"
+import NoticeEvents from "./Pages/NoticeEvents/NoticeEvents"
+import Career from "./Pages/Career/Career"
+import ContactUs from "./Pages/ContactUs/ContactUs"
+import Gallery from "./Pages/Gallery/Gallery"
 const App = () => {
   return (
     <>
@@ -33,6 +39,12 @@ const App = () => {
             <Route path="/games-sports" element={<GamesSports />} />
             <Route path="/annual-function" element={<AnnualFunction />} />
             <Route path="/parents-day" element={<ParentsDay />} />
+            <Route path="/cca" element={<CCA />} />
+            <Route path="/award-and-achievement" element={<AwardAchievement />} />
+            <Route path="/notice-and-events" element={<NoticeEvents />} />
+            <Route path="/career" element={<Career />} />
+            <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/gallery" element={<Gallery />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -142,35 +142,46 @@ const Header = () => {
                   >
                     <ul className="flex flex-col text-darkPurple">
                       <Link to="/games-sports">
-                      <li className="p-4 font-medium hover:bg-blue hover:bg-opacity-10 border-t border-gray border-opacity-25">
-                        Games & Sports
-                      </li>
+                        <li className="p-4 font-medium hover:bg-blue hover:bg-opacity-10 border-t border-gray border-opacity-25">
+                          Games & Sports
+                        </li>
                       </Link>
                       <Link to="/annual-function">
-                      <li className="p-4 font-medium hover:bg-blue hover:bg-opacity-10 border-t border-gray border-opacity-25">
-                        Annual Function
-                      </li>
+                        <li className="p-4 font-medium hover:bg-blue hover:bg-opacity-10 border-t border-gray border-opacity-25">
+                          Annual Function
+                        </li>
                       </Link>
                       <Link to="/parents-day">
-                      <li className="p-4 font-medium hover:bg-blue hover:bg-opacity-10 border-t border-gray border-opacity-25">
-                        Parents Day
-                      </li>
+                        <li className="p-4 font-medium hover:bg-blue hover:bg-opacity-10 border-t border-gray border-opacity-25">
+                          Parents Day
+                        </li>
                       </Link>
-                    
-                      <li className="p-4 font-medium hover:bg-blue hover:bg-opacity-10 border-t border-gray border-opacity-25">
-                        CCA
-                      </li>
-                      <li className="p-4 font-medium hover:bg-blue hover:bg-opacity-10 border-t border-gray border-opacity-25">
-                        Award & Achievements
-                      </li>
+                      <Link to="/cca">
+                        <li className="p-4 font-medium hover:bg-blue hover:bg-opacity-10 border-t border-gray border-opacity-25">
+                          CCA
+                        </li>
+                      </Link>
+                      <Link to="/award-and-achievement">
+                        <li className="p-4 font-medium hover:bg-blue hover:bg-opacity-10 border-t border-gray border-opacity-25">
+                          Award & Achievements
+                        </li>
+                      </Link>
                     </ul>
                   </nav>
                 )}
               </li>
-              <li className="py-4 px-1">Notice And Events</li>
-              <li className="py-4 px-1">Career</li>
-              <li className="py-4 px-1">Contact Us</li>
-              <li className="py-4 px-1">Gallery</li>
+              <Link to="/notice-and-events">
+                <li className="py-4 px-1">Notice And Events</li>
+              </Link>
+              <Link to="/career">
+                <li className="py-4 px-1">Career</li>
+              </Link>
+              <Link to="/contact-us">
+                <li className="py-4 px-1">Contact Us</li>
+              </Link>
+              <Link to="/gallery">
+                <li className="py-4 px-1">Gallery</li>
+              </Link>
             </ul>
           </nav>
         </div>

@@ -1,4 +1,4 @@
-import BannerImage from "../../assets/banner/6.jpeg";
+import BannerImage from "../../assets/banner/9.jpeg";
 import gamesSportsData from "../../Data/GamesSportsData"
 
 const AdmissionPolicy = () => {
