@@ -9,20 +9,20 @@ const WhySouthwestern = () => {
   return (
     <>
       <div className="bg-darkPurple">
-        <div className="container mx-auto py-16">
-          <div className="grid grid-cols-4 gap-4 items-center">
-            <div className="col-span-1">
+        <div className="container mx-auto sm:py-16 py-8">
+          <div className="grid sm:grid-cols-4 sm: gap-4 items-center">
+            <div className="col-span-3 sm:col-span-1 p-4">
               <p className="text-orange font-semibold text-sm">
                 WORLD CLASS FACILITIES
               </p>
-              <h3 className="text-white font-semibold text-3xl tracking-wider">
+              <h3 className="text-white font-semibold text-xl sm:text-3xl tracking-wider">
                 Why Southwestern Is Best Solution For Education
               </h3>
             </div>
-            <div className="col-span-3 grid grid-cols-3 grid-rows-2 p-4 gap-4">
+            <div className="col-span-3 grid sm:grid-cols-3 grid-rows-2 p-4 gap-4">
               <div className="flex justify-center flex-col items-center gap-2 border border-gray rounded-lg border-opacity-20 p-4">
                 <LuMonitorDot className="text-orange text-5xl" />
-                <h3 className="text-white font-bold text-xl">
+                <h3 className="text-white font-bold sm:text-xl">
                   INTERACTIVE LEARNING
                 </h3>
                 <p className="text-center text-sm text-white text-opacity-60">
@@ -33,7 +33,7 @@ const WhySouthwestern = () => {
 
               <div className="flex justify-center flex-col items-center gap-2 border border-gray rounded-lg border-opacity-20 p-4">
                 <FaBed className="text-orange text-5xl" />
-                <h3 className="text-white font-bold text-xl">INFIRMARY</h3>
+                <h3 className="text-white font-bold sm:text-xl">INFIRMARY</h3>
                 <p className="text-center text-sm text-white text-opacity-60">
                   The school has a separate and cheerful infirmary with a
                   qualified nurse who takes care of the health.
@@ -42,7 +42,7 @@ const WhySouthwestern = () => {
 
               <div className="flex justify-center flex-col items-center gap-2 border border-gray rounded-lg border-opacity-20 p-4">
                 <FaBusAlt className="text-orange text-5xl" />
-                <h3 className="text-white font-bold text-xl">
+                <h3 className="text-white font-bold sm:text-xl">
                   SHUTTLE SERVICE
                 </h3>
                 <p className="text-center text-sm text-white text-opacity-60">
@@ -53,7 +53,7 @@ const WhySouthwestern = () => {
 
               <div className="flex justify-center flex-col items-center gap-2 border border-gray rounded-lg border-opacity-20 p-4">
                 <FaChalkboardTeacher className="text-orange text-5xl" />
-                <h3 className="text-white font-bold text-xl">TEACHING STAFF</h3>
+                <h3 className="text-white font-bold sm:text-xl">TEACHING STAFF</h3>
                 <p className="text-center text-sm text-white text-opacity-60">
                   We have been blessed at SWS with an outstanding and
                   experienced staff.
@@ -62,7 +62,7 @@ const WhySouthwestern = () => {
 
               <div className="flex justify-center flex-col items-center gap-2 border border-gray rounded-lg border-opacity-20 p-4">
                 <PiMusicNotesSimpleBold className="text-orange text-5xl" />
-                <h3 className="text-white font-bold text-xl">MUSIC</h3>
+                <h3 className="text-white font-bold sm:text-xl">MUSIC</h3>
                 <p className="text-center text-sm text-white text-opacity-60">
                   A variety of instruments including guitars, keyboards,
                   violins, drum sets, harmoniums and tablas for students .
@@ -71,7 +71,7 @@ const WhySouthwestern = () => {
 
               <div className="flex justify-center flex-col items-center gap-2 border border-gray rounded-lg border-opacity-20 p-4">
                 <MdSportsTennis className="text-orange text-5xl" />
-                <h3 className="text-white font-bold text-xl">
+                <h3 className="text-white font-bold sm:text-xl">
                   SPORTS FACILITIES
                 </h3>
                 <p className="text-center text-sm text-white text-opacity-60">

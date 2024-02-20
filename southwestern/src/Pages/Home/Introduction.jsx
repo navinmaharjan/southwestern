@@ -8,8 +8,8 @@ const Introduction = () => {
     <>
       <div className="bg-gray bg-opacity-10">
         <div className="container mx-auto">
-          <div className="grid grid-cols-2 py-8 items-center">
-            <div className="p-4">
+          <div className="grid sm:grid-cols-2 py-8 items-center">
+            <div className="p-2 order-2 sm:order-1">
               <div className="relative w-full h-[414px] overflow-hidden shadow-2xl group cursor-pointer">
                 <iframe
                   width="760"
@@ -19,27 +19,22 @@ const Introduction = () => {
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen
+                  className="hidden sm:block"
                 ></iframe>
-                {/* <img
-                  src={IntroImage}
-                  alt="introduction image"
-                  className="absolute w-full h-full object-cover"
-                /> */}
-                {/* <div className="absolute w-full h-[144px] bg-black bottom-0 opacity-50"></div> */}
-                {/* <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-orange rounded-full z-20 flex justify-center items-center">
-                  <IoMdPlay className="text-3xl text-white" />
-                </div> */}
-
-                {/* <div className="absolute  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-white rounded-full bg-opacity-40 group-hover:scale-125 transition-all duration-300"></div>
-                <div className="absolute  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-white rounded-full bg-opacity-40 group-hover:scale-150 transition-all duration-300"></div>
-                <div className="absolute bottom-16 left-1/2 -translate-x-1/2">
-                  <h3 className="text-white font-semibold text-xl">
-                    Sneap Peek To School
-                  </h3>
-                </div> */}
+                 <iframe
+                  width="364"
+                  height="415"
+                  src="https://www.youtube.com/embed/XDqWLOXbjKE?si=DV-HXJ17BC5MmOZU"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  className=" sm:hidden"
+                ></iframe>
+               
               </div>
             </div>
-            <div className="p-4 flex flex-col gap-2 items-start">
+            <div className="p-2 flex flex-col gap-2 items-start order-1 sm:order-2">
               <h3 className="uppercase text-2xl font-bold text-darkPurple">
                 We at Southwestern
               </h3>

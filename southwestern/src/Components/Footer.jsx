@@ -13,9 +13,9 @@ const Footer = () => {
   const year = currentDate.getFullYear();
   return (
     <>
-      <div className="bg-darkPurple p-16">
+      <div className="bg-darkPurple p-2  sm:p-16">
         <div className="container mx-auto">
-          <div className="grid grid-cols-4 gap-8">
+          <div className="grid sm:grid-cols-4 gap-8">
             <div className="flex flex-col items-center">
               <div className="relative w-24 h-24">
                 <img

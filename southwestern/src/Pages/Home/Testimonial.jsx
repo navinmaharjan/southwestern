@@ -10,10 +10,10 @@ const Testimonials = () => {
   return (
     <>
       <div className="bg-gray bg-opacity-10">
-        <div className="container mx-auto py-24">
-          <div className="flex justify-center flex-col items-start pb-8">
-            <p className="text-darkOrange font-semibold text-xl">TESTIMONIAL</p>
-            <h3 className="text-darkPurple font-bold text-4xl">
+        <div className="container mx-auto py-8 sm:py-24">
+          <div className="flex justify-center flex-col items-start sm:pb-8">
+            <p className="text-darkOrange font-semibold sm:text-xl">TESTIMONIAL</p>
+            <h3 className="text-darkPurple font-bold text-2xl sm:text-4xl">
               Explore the experience
             </h3>
           </div>
