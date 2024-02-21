@@ -13,10 +13,10 @@ const Footer = () => {
   const year = currentDate.getFullYear();
   return (
     <>
-      <div className="bg-darkPurple p-2  sm:p-16">
+      <div className="bg-darkPurple p-2  md:p-16">
         <div className="container mx-auto">
-          <div className="grid sm:grid-cols-4 gap-8">
-            <div className="flex flex-col items-center">
+          <div className="grid sm:grid-cols-2  xl:grid-cols-4 gap-8">
+            <div className="flex flex-col items-center sm:col-span-2 md:col-auto">
               <div className="relative w-24 h-24">
                 <img
                   src={Logo}
@@ -49,9 +49,9 @@ const Footer = () => {
               <div className="flex items-center gap-4">
                 <FaLocationDot className="text-blue" />
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-white text-xs">Address Line-1</h3>
+                 
                   <h3 className="text-white text-xs">
-                    Address Line-2, Kathmandu, Nepal
+                    Basundhara, Kathmandu, Nepal
                   </h3>
                 </div>
               </div>
@@ -118,8 +118,17 @@ const Footer = () => {
               </h3>
             </div>
 
-            {/* Gallery */}
-            <div className="h-60"></div>
+            {/* Google Map */}
+            <div className="sm:col-span-2 md:col-auto">
+            <h3 className="text-white text-xl border-b border-orange tracking-wider uppercase font-medium">
+                FIND US ON GOOGLE
+              </h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.288472148348!2d85.32247367631062!3d27.73924707616439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb194353e92535%3A0x16ac466d4804b3f0!2ssouthwestern%20school!5e0!3m2!1sen!2snp!4v1708336579455!5m2!1sen!2snp"
+              referrerpolicy="no-referrer-when-downgrade"
+              className="w-full h-auto mt-4"
+            ></iframe>
+            </div>
           </div>
         </div>
       </div>

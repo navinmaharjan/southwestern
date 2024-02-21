@@ -10,8 +10,8 @@ const WhySouthwestern = () => {
     <>
       <div className="bg-darkPurple">
         <div className="container mx-auto sm:py-16 py-8">
-          <div className="grid sm:grid-cols-4 sm: gap-4 items-center">
-            <div className="col-span-3 sm:col-span-1 p-4">
+          <div className="grid xl:grid-cols-4 sm: gap-4 items-center">
+            <div className="col-span-3 xl:col-span-1 p-4 text-center">
               <p className="text-orange font-semibold text-sm">
                 WORLD CLASS FACILITIES
               </p>
@@ -19,7 +19,7 @@ const WhySouthwestern = () => {
                 Why Southwestern Is Best Solution For Education
               </h3>
             </div>
-            <div className="col-span-3 grid sm:grid-cols-3 grid-rows-2 p-4 gap-4">
+            <div className="col-span-3 grid sm:grid-cols-2 md:grid-cols-3 grid-rows-2 p-4 gap-4 text-center">
               <div className="flex justify-center flex-col items-center gap-2 border border-gray rounded-lg border-opacity-20 p-4">
                 <LuMonitorDot className="text-orange text-5xl" />
                 <h3 className="text-white font-bold sm:text-xl">

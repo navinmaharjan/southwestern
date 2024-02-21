@@ -8,33 +8,24 @@ const Introduction = () => {
     <>
       <div className="bg-gray bg-opacity-10">
         <div className="container mx-auto">
-          <div className="grid sm:grid-cols-2 py-8 items-center">
-            <div className="p-2 order-2 sm:order-1">
+          <div className="grid xl:grid-cols-2 py-8 items-center">
+            <div className="p-2 order-2 ">
               <div className="relative w-full h-[414px] overflow-hidden shadow-2xl group cursor-pointer">
-                <iframe
-                  width="760"
-                  height="415"
-                  src="https://www.youtube.com/embed/XDqWLOXbjKE?si=DV-HXJ17BC5MmOZU"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                  className="hidden sm:block"
-                ></iframe>
+             
                  <iframe
-                  width="364"
-                  height="415"
+                  // width="364"
+                  // height="415"
                   src="https://www.youtube.com/embed/XDqWLOXbjKE?si=DV-HXJ17BC5MmOZU"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen
-                  className=" sm:hidden"
+                  className=" w-full h-[420px]"
                 ></iframe>
                
               </div>
             </div>
-            <div className="p-2 flex flex-col gap-2 items-start order-1 sm:order-2">
+            <div className="p-2 flex flex-col gap-2 items-start order-1">
               <h3 className="uppercase text-2xl font-bold text-darkPurple">
                 We at Southwestern
               </h3>

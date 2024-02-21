@@ -3,8 +3,13 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     container: {
+      center: true,
       padding: {
-        DEFAULT: "10px",
+        DEFAULT: '1rem',
+        sm: '1rem',
+        lg: '1rem',
+        xl: '2rem',
+        '2xl': '2rem',
       },
     },
 

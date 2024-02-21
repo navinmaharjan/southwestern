@@ -10,9 +10,11 @@ const Testimonials = () => {
   return (
     <>
       <div className="bg-gray bg-opacity-10">
-        <div className="container mx-auto py-8 sm:py-24">
+        <div className="container mx-auto py-8 md:py-24">
           <div className="flex justify-center flex-col items-start sm:pb-8">
-            <p className="text-darkOrange font-semibold sm:text-xl">TESTIMONIAL</p>
+            <p className="text-darkOrange font-semibold sm:text-xl">
+              TESTIMONIAL
+            </p>
             <h3 className="text-darkPurple font-bold text-2xl sm:text-4xl">
               Explore the experience
             </h3>
@@ -29,36 +31,40 @@ const Testimonials = () => {
             navigation={true}
             modules={[Autoplay, Pagination, Navigation]}
             breakpoints={{
-                640: {
-                  slidesPerView: 1,
-                  spaceBetween: 0,
-                },
-                768: {
-                  slidesPerView: 1,
-                  spaceBetween: 0,
-                },
-                1024: {
-                  slidesPerView: 3,
-                  spaceBetween: 20,
-                },
-              }}
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+            }}
           >
             {testimonialData.map((item, index) => (
-                <SwiperSlide key={index}>
-                    <div className="flex flex-col gap-2 bg-white  p-4 justify-center items-center border border-gray border-opacity-20 ">
-                    <p className="text-center text-base text-gray">{item.testimonialDetail}</p>
-                    <div className="relative w-14 h-14 rounded-full overflow-hidden">
-                        <img src={item.testimonialImage} alt="testimonial image"  className="absolute w-full h-full object-cover" />
-                     
-                    </div>
-                    <div className="text-center">
-                      <p className="text-gray">{item.testimonialName}</p>
-                      <p className="text-gray">{item.testimonialProfession}</p>
-                    </div>
+              <SwiperSlide key={index}>
+                <div className="flex flex-col gap-2 bg-white  p-4 justify-center items-center border border-gray border-opacity-20 ">
+                  <p className="text-center text-base text-gray">
+                    {item.testimonialDetail}
+                  </p>
+                  <div className="relative w-14 h-14 rounded-full overflow-hidden">
+                    <img
+                      src={item.testimonialImage}
+                      alt="testimonial image"
+                      className="absolute w-full h-full object-cover"
+                    />
                   </div>
-                </SwiperSlide>
+                  <div className="text-center">
+                    <p className="text-gray">{item.testimonialName}</p>
+                    <p className="text-gray">{item.testimonialProfession}</p>
+                  </div>
+                </div>
+              </SwiperSlide>
             ))}
-           
           </Swiper>
         </div>
       </div>
@@ -67,7 +73,3 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
-
-
-
-

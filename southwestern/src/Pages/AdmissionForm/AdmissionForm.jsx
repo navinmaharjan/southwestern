@@ -25,31 +25,31 @@ const AdmissionForm = () => {
         {/* <div className="bg-orange opacity-80 w-1/5 h-20 absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2  text-7xl font-bold text-white"></div> */}
       </div>
 
-      <div className="container mx-auto py-4 sm:py-16">
-        <form className="sm:mx-[100px] sm:p-10">
+      <div className="container mx-auto py-4 xl:py-16">
+        <form className="2xl:mx-[100px]">
           <h3 className="text-slate-700 font-semibold">
             Student's Name (IN BLOCK LETTERS)
           </h3>
-          <div className="flex justify-between mt-2 flex-col sm:flex-row">
+          <div className="flex justify-between mt-2 flex-col xl:flex-row">
             <div className="flex flex-col">
               <p className="text-sm">First Name</p>
               <input
                 type="text"
-                className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
               />
             </div>
             <div className="flex flex-col">
               <p className="text-sm">Middle Name</p>
               <input
                 type="text"
-                className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
               />
             </div>
             <div className="flex flex-col">
               <p className="text-sm">Last Name</p>
               <input
                 type="text"
-                className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
               />
             </div>
           </div>
@@ -60,7 +60,7 @@ const AdmissionForm = () => {
               <p className="text-sm">Date of Birth</p>
               <input
                 type="date"
-                className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
               />
             </div>
             <div className="flex flex-col">
@@ -86,12 +86,12 @@ const AdmissionForm = () => {
             </div>
           </div>
 
-          <div className="flex justify-between mt-8 flex-col sm:flex-row">
+          <div className="flex justify-between mt-8 flex-col xl:flex-row">
             <div className="flex flex-col">
               <p className="text-sm">Address</p>
               <input
                 type="text"
-                className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
               />
             </div>
             <div className="flex flex-col">
@@ -99,7 +99,7 @@ const AdmissionForm = () => {
               <select
                 name="gradeAdmission"
                 id="gradeAdmission"
-                className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
               >
                 <option value="none" className="text-sm">
                   Select Class
@@ -165,12 +165,12 @@ const AdmissionForm = () => {
               <p className="text-sm">Name of the school last attended Name</p>
               <input
                 type="text"
-                className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
               />
             </div>
           </div>
 
-          <div className="flex gap-[54px] mt-8 flex-col sm:flex-row">
+          <div className="flex gap-[54px] mt-8 flex-col xl:flex-row">
             <div className=" flex flex-col gap-2">
               <p className="text-slate-700 font-semibold">
                 Father's Information
@@ -179,42 +179,42 @@ const AdmissionForm = () => {
                 <p className="text-sm">Full Name</p>
                 <input
                   type="text"
-                  className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                  className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
                 />
               </div>
               <div className="flex flex-col">
                 <p className="text-sm">Mobile Number</p>
                 <input
                   type="text"
-                  className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                  className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
                 />
               </div>
               <div className="flex flex-col">
                 <p className="text-sm">Office Name</p>
                 <input
                   type="text"
-                  className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                  className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
                 />
               </div>
               <div className="flex flex-col">
                 <p className="text-sm">Phone Number(Office)</p>
                 <input
                   type="text"
-                  className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                  className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
                 />
               </div>
               <div className="flex flex-col">
                 <p className="text-sm">Email</p>
                 <input
                   type="text"
-                  className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                  className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
                 />
               </div>
               <div className="flex flex-col">
                 <p className="text-sm">Occupation</p>
                 <input
                   type="text"
-                  className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                  className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
                 />
               </div>
             </div>
@@ -226,42 +226,42 @@ const AdmissionForm = () => {
                 <p className="text-sm">Full Name</p>
                 <input
                   type="text"
-                  className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                  className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
                 />
               </div>
               <div className="flex flex-col">
                 <p className="text-sm">Mobile Number</p>
                 <input
                   type="text"
-                  className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                  className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
                 />
               </div>
               <div className="flex flex-col">
                 <p className="text-sm">Office Name</p>
                 <input
                   type="text"
-                  className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                  className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
                 />
               </div>
               <div className="flex flex-col">
                 <p className="text-sm">Phone Number(Office)</p>
                 <input
                   type="text"
-                  className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                  className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
                 />
               </div>
               <div className="flex flex-col">
                 <p className="text-sm">Email</p>
                 <input
                   type="text"
-                  className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                  className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
                 />
               </div>
               <div className="flex flex-col">
                 <p className="text-sm">Occupation</p>
                 <input
                   type="text"
-                  className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                  className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
                 />
               </div>
             </div>
@@ -270,49 +270,49 @@ const AdmissionForm = () => {
           <h3 className="text-slate-700 font-semibold mt-8">
             Local Guardian/Contact Person
           </h3>
-          <div className="flex justify-between mt-4 flex-col sm:flex-row">
+          <div className="flex justify-between mt-4 flex-col xl:flex-row">
             <div className="flex flex-col">
               <p className="text-sm">Full Name</p>
               <input
                 type="text"
-                className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
               />
             </div>
             <div className="flex flex-col">
               <p className="text-sm">Relation</p>
               <input
                 type="text"
-                className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
               />
             </div>
             <div className="flex flex-col">
               <p className="text-sm">Mobile No.</p>
               <input
                 type="text"
-                className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
               />
             </div>
           </div>
-          <div className="flex justify-between mt-4 flex-col sm:flex-row">
+          <div className="flex justify-between mt-4 flex-col xl:flex-row">
             <div className="flex flex-col">
               <p className="text-sm">Phone Number(Office)</p>
               <input
                 type="text"
-                className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
               />
             </div>
             <div className="flex flex-col">
               <p className="text-sm">Email</p>
               <input
                 type="text"
-                className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
               />
             </div>
             <div className="flex flex-col">
               <p className="text-sm">Occupation</p>
               <input
                 type="text"
-                className="bg-offWhite border border-gray border-opacity-20 sm:w-96 p-1 focus:outline-none rounded-md"
+                className="bg-offWhite border border-gray border-opacity-20 xl:w-96 p-1 focus:outline-none rounded-md"
               />
             </div>
           </div>

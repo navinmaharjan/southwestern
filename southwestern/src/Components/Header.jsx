@@ -1,4 +1,4 @@
-import { useRef } from "react"; // Import useRef hook
+import { useRef } from "react"; 
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo/logo.png";
 import { useState } from "react";
@@ -44,7 +44,7 @@ const Header = () => {
     <>
       {/* --------- Top Header ------------ */}
       <div className="bg-blue py-1 hidden sm:block">
-        <div className="container mx-auto  flex justify-between items-center text-white text-sm">
+        <div className="container flex justify-between items-center text-white text-sm">
           <p>Call us : 01-4961914 | 01-4956065 | 01-4960080</p>
           <div className="flex gap-4">
             <Link to="https://facebook.com" target="_blank">
@@ -65,7 +65,7 @@ const Header = () => {
 
       {/* --------- Second Header ---------- */}
       <div className="sticky top-0 left-0 bg-white z-30 shadow-md">
-        <div className="container mx-auto py-1 sm:py-0">
+        <div className="container py-1 sm:py-0">
           <div className="flex justify-between items-center">
             <Link to="/">
               <div className="flex items-center gap-4">
@@ -85,8 +85,9 @@ const Header = () => {
               </div>
             </Link>
 
-            <nav className="hidden sm:block">
-              <ul className="flex gap-4 text-sm tracking-wide text-slate-900 font-normal">
+            {/* -------- Desktop Menu ------- */}
+            <nav className="hidden xl:block">
+              <ul className="flex gap-4 text-sm tracking-wide text-slate-900 font-normal xl:flex-wrap ">
                 <Link to={"/"}>
                   <li className="py-5 px-1">Home</li>
                 </Link>
@@ -133,9 +134,7 @@ const Header = () => {
                     </nav>
                   )}
                 </li>
-                <Link to="/admission-form">
-                  <li className="py-5 px-1">Admission Form</li>
-                </Link>
+
                 <li
                   className="py-5 px-1 relative flex justify-center items-center gap-1"
                   onMouseEnter={() => setAdmission(true)}
@@ -149,6 +148,11 @@ const Header = () => {
                       )}`}
                     >
                       <ul className="flex flex-col text-darkPurple shadow-lg">
+                        <Link to="/admission-form">
+                          <li className="p-4 font-medium hover:bg-blue hover:bg-opacity-10 border-t border-gray border-opacity-25">
+                            Admission Form
+                          </li>
+                        </Link>
                         <Link to="/admission-policy">
                           <li className="p-4 font-medium hover:bg-blue hover:bg-opacity-10 border-t border-gray border-opacity-25">
                             Admission Policy
@@ -269,7 +273,7 @@ const Header = () => {
               </ul>
             </nav>
 
-            <div className="mr-2 sm:hidden" onClick={handleBurgerMenu}>
+            <div className="mr-2 xl:hidden" onClick={handleBurgerMenu}>
               <RxHamburgerMenu className="text-2xl" />
             </div>
           </div>
@@ -280,10 +284,8 @@ const Header = () => {
             style={{
               maxHeight: `${nav ? `${navRef.current.scrollHeight}px` : "0px"}`,
             }}
-            //  style={{
-            //   maxHeight: `${nav ? `auto` : "0px"}`,
-            // }}
-            className={`w-full sm:hidden overflow-hidden`}
+          
+            className={`w-full xl:hidden overflow-hidden transition-all duration-500 ease-in-out`}
           >
             <ul className="flex flex-col gap-6  uppercase text-sm py-4 font-medium p-2">
               <Link to="/" onClick={handleBurgerMenu}>
@@ -316,26 +318,25 @@ const Header = () => {
                 </ul>
               )}
 
-              <Link to="/admission-form" onClick={handleBurgerMenu}>
-                <li>Admission Form</li>
-              </Link>
-
               <li className="flex items-center gap-1" onClick={handleAdmission}>
                 Admissions <FaCaretDown />
               </li>
               {admission && (
                 <ul className="w-[200px] top-10 left-0 flex flex-col gap-4 ml-4">
+                  <Link to="/admission-form" onClick={handleBurgerMenu}>
+                    <li>Admission Form</li>
+                  </Link>
                   <Link to="admission-policy" onClick={handleBurgerMenu}>
-                  <li>Admission Policy</li>
+                    <li>Admission Policy</li>
                   </Link>
                   <Link to="/fee-structure" onClick={handleBurgerMenu}>
-                  <li>Fee Structure</li>
+                    <li>Fee Structure</li>
                   </Link>
                   <Link to="/scholarship-program" onClick={handleBurgerMenu}>
-                  <li>Scholarship Program</li>
+                    <li>Scholarship Program</li>
                   </Link>
                   <Link to="/faq" onClick={handleBurgerMenu}>
-                  <li>FAQs</li>
+                    <li>FAQs</li>
                   </Link>
                 </ul>
               )}
@@ -346,16 +347,16 @@ const Header = () => {
               {academics && (
                 <ul className="w-[200px] top-10 left-0 flex flex-col gap-4 ml-4">
                   <Link to="pre-primary" onClick={handleBurgerMenu}>
-                  <li>Pre Primary</li>
+                    <li>Pre Primary</li>
                   </Link>
                   <Link to="/primary" onClick={handleBurgerMenu}>
-                  <li>Primary</li>
+                    <li>Primary</li>
                   </Link>
                   <Link to="/lower-secondary" onClick={handleBurgerMenu}>
-                  <li>Lower Secondary</li>
+                    <li>Lower Secondary</li>
                   </Link>
                   <Link to="/secondary" onClick={handleBurgerMenu}>
-                  <li>Secondary</li>
+                    <li>Secondary</li>
                   </Link>
                 </ul>
               )}
@@ -369,19 +370,19 @@ const Header = () => {
               {activities && (
                 <ul className="w-[200px] top-10 left-0 flex flex-col gap-4 ml-4">
                   <Link to="/games-sports" onClick={handleBurgerMenu}>
-                  <li>Games & Sports</li>
+                    <li>Games & Sports</li>
                   </Link>
                   <Link to="/annual-function" onClick={handleBurgerMenu}>
-                  <li>Annual Function</li>
+                    <li>Annual Function</li>
                   </Link>
                   <Link to="/parents-day" onClick={handleBurgerMenu}>
-                  <li>Parents Day</li>
+                    <li>Parents Day</li>
                   </Link>
                   <Link to="/cca" onClick={handleBurgerMenu}>
-                  <li>CCA</li>
+                    <li>CCA</li>
                   </Link>
                   <Link to="/award-and-achievement" onClick={handleBurgerMenu}>
-                  <li>Awards & Achievements</li>
+                    <li>Awards & Achievements</li>
                   </Link>
                 </ul>
               )}
