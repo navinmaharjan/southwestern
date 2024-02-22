@@ -1,4 +1,4 @@
-import { useRef } from "react"; 
+import { useRef } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo/logo.png";
 import { useState } from "react";
@@ -280,12 +280,11 @@ const Header = () => {
 
           {/* --------- mobile menu --------- */}
           <div
-            ref={navRef}
-            style={{
-              maxHeight: `${nav ? `${navRef.current.scrollHeight}px` : "0px"}`,
-            }}
-          
-            className={`w-full xl:hidden overflow-hidden transition-all duration-500 ease-in-out`}
+            // ref={navRef}
+            // style={{
+            //   maxHeight: `${nav ? `${navRef.current.scrollHeight}px` : "0px"}`,
+            // }}
+            className={`w-full xl:hidden overflow-hidden transition-all duration-500 ease-in-out ${nav ? 'h-auto' : 'h-0 overflow-scroll'}`}
           >
             <ul className="flex flex-col gap-6  uppercase text-sm py-4 font-medium p-2">
               <Link to="/" onClick={handleBurgerMenu}>
