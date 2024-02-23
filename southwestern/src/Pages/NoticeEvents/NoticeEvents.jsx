@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import BannerImage from "../../assets/banner/9.jpeg";
 import { useState, useEffect } from "react";
+import NoticeData from "../../Data/NoticeData";
+import EventData from "../../Data/EventData"
 
 const NoticeEvents = () => {
   const [activeBox, setActiveBox] = useState(0);
@@ -11,7 +13,6 @@ const NoticeEvents = () => {
   useEffect(() => {
     handleActiveBox(activeBox);
   }, [activeBox]);
-
 
   return (
     <>
@@ -39,32 +40,62 @@ const NoticeEvents = () => {
       </div>
 
       <div className="container mx-auto py-4 xl:py-16">
-       
-          <div className="flex flex-col gap-4">
-            <div className="flex flex-col gap-3">
-              <div className="flex justify-center items-center gap-4">
-                <p onClick={() => handleActiveBox(0)} className={`${activeBox === 0 ? "text-orange underline" : "text-slate-700"} cursor-pointer text-lg font-semibold`}>Notice</p>
-
-                <p onClick={() => handleActiveBox(1)} className={`${activeBox === 1 ? "text-orange underline" : "text-slate-700"} cursor-pointer text-lg font-semibold`}>Events</p>
-              </div>
-
-              <div
+        <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-3">
+            <div className="flex justify-center items-center gap-4">
+              <p
+                onClick={() => handleActiveBox(0)}
                 className={`${
-                  activeBox === 0 ? "flex" : "hidden"
-                } w-full h-80 justify-center items-center`}
+                  activeBox === 0 ? "text-orange underline" : "text-slate-700"
+                } cursor-pointer text-lg font-semibold`}
               >
                 Notice
-              </div>
-              <div
+              </p>
+
+              <p
+                onClick={() => handleActiveBox(1)}
                 className={`${
-                  activeBox === 1 ? "flex" : "hidden"
-                } w-full h-80 justify-center items-center`}
+                  activeBox === 1 ? "text-orange underline" : "text-slate-700"
+                } cursor-pointer text-lg font-semibold`}
               >
                 Events
+              </p>
+            </div>
+
+            <div
+              className={`${
+                activeBox === 0 ? "flex" : "hidden"
+              } w-full h-80 justify-center items-center`}
+            >
+              <div className="flex gap-4 flex-wrap">
+                {NoticeData?.map((item, index) => (
+                  <div key={index} className="border p-4 flex flex-col items-start w-[356px] gap-2">
+                    <p className="font-semibold text-lg">{item.noticeHeading}</p>
+                    <p>{item.noticeDate}</p>
+                    {/* <p>{item.noticeDetail}</p> */}
+                    <p>Read More </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div
+              className={`${
+                activeBox === 1 ? "flex" : "hidden"
+              } w-full h-80 justify-center items-center`}
+            >
+                <div className="flex gap-4 flex-wrap">
+                {EventData?.map((item, index) => (
+                  <div key={index} className="border p-4 flex flex-col items-start w-[356px] gap-2">
+                    <p className="font-semibold text-lg">{item.noticeHeading}</p>
+                    <p>{item.noticeDate}</p>
+                    {/* <p>{item.noticeDetail}</p> */}
+                    <p>Read More </p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
-   
+        </div>
       </div>
     </>
   );
